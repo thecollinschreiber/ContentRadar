@@ -1,0 +1,71 @@
+
+
+/* ----- Body CSS ----- */
+
+body {
+    display: flex;
+    background-color: #28262F;
+    height: 100vh;
+    border: none;
+}
+
+/* ----- Navigation Bar CSS ----- */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    font-family: sans-serif;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.pages {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    font-size: 120%;
+}
+
+.pages ul {
+    display: flex;
+    list-style: none;
+}
+
+.pages li {
+    justify-content: center;
+    margin: 0px 5px;
+}
+
+.about {
+ padding: 5px;
+}
+
+
+.home {
+    padding: 5px;
+   }
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.about a:hover {
+    color: #7900FF ;
+   }
+
+.home a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.home a:hover {
+    color: #7900FF;
+}
