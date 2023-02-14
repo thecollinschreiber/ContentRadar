@@ -1,71 +1,102 @@
 
+/* ----- Apply to All ----- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #28262F;
+}
 
 /* ----- Body CSS ----- */
 
-body {
-    display: flex;
-    background-color: #28262F;
-    height: 100vh;
-    border: none;
-}
 
-/* ----- Navigation Bar CSS ----- */
+/* ----- Nav Bar CSS ----- */
 
-nav {
-    display: flex;
-    width: 100%;
-    justify-content:space-between;
+li {
     font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    padding: 9px 25px;
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+
 }
-.logos {
+
+header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li:hover {
+    color: rgba(142, 25, 142, .8);
+}
+
+.textlogo {
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+/* ----- Hero Section CSS ----- */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 50px;
+
+}
+
+.try {
+    display: flex;
     align-items: left;
 }
 
-.pages {
+.dalle {
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+
+}
+
+.dalle img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.cardleft {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    font-size: 120%;
 }
 
-.pages ul {
-    display: flex;
-    list-style: none;
-}
-
-.pages li {
-    justify-content: center;
-    margin: 0px 5px;
-}
-
-.about {
- padding: 5px;
-}
-
-
-.home {
-    padding: 5px;
-   }
-
-.about a {
-    text-decoration: none;
-    color: white;
+.cardleft h1 {
+    font-size: 50px;
     font-family: sans-serif;
 }
 
-.about a:hover {
-    color: #7900FF ;
-   }
-
-.home a {
-    text-decoration: none;
-    color: white;
+.cardleft p {
+    font-size: 20px;
     font-family: sans-serif;
 }
 
-.home a:hover {
-    color: #7900FF;
+.cardleft button {
+    padding: 9px 25px;
+    color: white;
+    background-color: rgba(142, 25, 142, 1);
+    border-style: none;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.cardleft button:hover {
+    background-color: rgba(142, 25, 142, .8);
+    cursor: pointer;
 }
